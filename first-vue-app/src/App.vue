@@ -1,47 +1,36 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+//composition api
+import {ref} from 'vue'
+const count = ref(0)
+
+const decreaseCount=()=>{
+  count.value <= 0 ? (count.value = 0) : --count.value
+}
+const isDark = ref(false)
+//ref(default value) สร้าง reactive variable
+//when this var change , it will update at DOM 
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="min-h-screen" :class="isDark ? 'bg-black' : 'bg-white'">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div class="flex justify-end p-2">
+      <input type="checkbox" class="toggle" v-model="isDark" @click="isDark = !isDark"/>
     </div>
-  </header>
+    <h1 class="text-green-500 font-semibold tracking-widest text-2xl">My First Counter Application</h1>
 
-  <main>
-    <TheWelcome />
-  </main>
+  
+  <div class="flex p-4 space-x-2 bg-white">
+    <button class="px-3 py-1 bg-red-600 rounded-lg text-white" @click="decreaseCount ">-</button>
+    <!-- @click ==  v-on:click -->
+    <p class="text-xl font-semibold">Counter: {{ count }}</p>
+    <button class="px-3 py-1 text-white bg-green-500 rounded-lg" @click="++count">+</button>
+  </div>
+
+</div>
+
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+ 
+<style scoped></style>

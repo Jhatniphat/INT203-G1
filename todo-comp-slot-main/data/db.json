@@ -1,0 +1,94 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "category": "home",
+      "description": "Buy groceries asdawda"
+    },
+    {
+      "id": "2",
+      "category": "work",
+      "description": "Finish project report"
+    },
+    {
+      "id": "3",
+      "category": "home",
+      "description": "Clean the houseasdasd"
+    },
+    {
+      "id": "4",
+      "category": "work",
+      "description": "Attend meeting at 2 PM"
+    },
+    {
+      "id": "5",
+      "category": "home",
+      "description": "Water the plants"
+    },
+    {
+      "id": "6",
+      "category": "work",
+      "description": "Reply to emails"
+    },
+    {
+      "id": "7",
+      "category": "home",
+      "description": "Prepare dinner"
+    },
+    {
+      "id": "8",
+      "category": "work",
+      "description": "Code review"
+    },
+    {
+      "id": "9",
+      "category": "home",
+      "description": "Exercise for 30 minutes"
+    },
+    {
+      "id": "10",
+      "category": "work",
+      "description": "Submit quarterly report"
+    },
+    {
+      "id": "1287",
+      "category": "home",
+      "description": "blablablabla"
+    },
+    {
+      "id": "23db",
+      "category": "home",
+      "description": "blablablabla"
+    },
+    {
+      "id": "e8b6",
+      "category": "home",
+      "description": "adsdwasd"
+    },
+    {
+      "id": "c2bc",
+      "category": "home",
+      "description": "asdwasdawd"
+    },
+    {
+      "id": "91ab",
+      "category": "home",
+      "description": "asda"
+    },
+    {
+      "id": "4a36",
+      "category": "home",
+      "description": "asjd;lasda"
+    },
+    {
+      "id": "5c7b",
+      "category": "work",
+      "description": "adwakj;sldasd"
+    },
+    {
+      "id": "1b1a",
+      "category": "work",
+      "description": "adsasd"
+    }
+  ]
+}
